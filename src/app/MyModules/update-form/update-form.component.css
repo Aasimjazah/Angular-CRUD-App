@@ -1,0 +1,13 @@
+.container{
+  text-align: center;
+  margin-top: 20px;
+  border-radius: 2px solid black;
+  }
+
+  .field{
+    width:50%;
+  }
+  .btn{
+    margin: 10px;
+    width: 100px;
+  }

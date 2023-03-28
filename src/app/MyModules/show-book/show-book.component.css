@@ -1,0 +1,20 @@
+.container{
+  border-radius: 25px;
+  border: 2px solid #000000;
+  padding: 5px;
+  width: 50%;
+  margin-left: 25%;
+
+
+}
+
+.li{
+  border-radius: 25px;
+  border: 2px solid #7a836e;
+  padding: 2%;
+  margin: 2%;
+}
+
+.btn{
+  margin-left: 85%;
+}

@@ -1,0 +1,52 @@
+<div class="container">
+
+  <mat-form-field appearance="outline" class="field">
+    <mat-label>Book ID</mat-label>
+    <input matInput placeholder="Book Title" name="title" [(ngModel)]="book.id" class="field">
+    <mat-icon matSuffix>book</mat-icon>
+    <mat-hint>ID of the book</mat-hint>
+  </mat-form-field><br>
+
+  <mat-form-field appearance="outline" class="field">
+    <mat-label>Book Title</mat-label>
+    <input matInput placeholder="Book Title" name="title" [(ngModel)]="book.title" class="field">
+    <mat-icon matSuffix>book</mat-icon>
+    <mat-hint>Title of the book</mat-hint>
+  </mat-form-field><br>
+
+  <mat-form-field appearance="outline" class="field">
+    <mat-label>Book Author</mat-label>
+    <input matInput placeholder="Book Author" name="author" [(ngModel)]="book.author" class="field">
+    <mat-icon matSuffix>book</mat-icon>
+    <mat-hint>Author of the book</mat-hint>
+  </mat-form-field><br>
+
+  <mat-form-field appearance="outline" class="field">
+    <mat-label>Book Price</mat-label>
+    <input matInput placeholder="Book Price" name="price" [(ngModel)]="book.price" class="field">
+    <mat-icon matSuffix>book</mat-icon>
+    <mat-hint>Price of the book</mat-hint>
+  </mat-form-field> <br>
+
+  <mat-form-field appearance="outline" class="field">
+    <mat-label>Book Category</mat-label>
+
+    <select matNativeControl required name="category" [(ngModel)]="book.category">
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="mercedes">Mercedes</option>
+      <option value="audi">Audi</option>
+    </select>
+    <mat-icon matSuffix>book</mat-icon>
+  </mat-form-field>
+
+
+  <section>
+    <div class="example-button-row">
+      <button (click)="onSubmit()" mat-raised-button color="primary" class="btn">update</button>
+
+
+    </div>
+  </section>
+
+  </div>

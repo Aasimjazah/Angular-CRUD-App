@@ -1,0 +1,20 @@
+<div class="container">
+
+<div *ngIf="book[0]==null">
+  <p>No books to show</p>
+</div>
+<ul>
+      <li *ngFor="let books of book" class="li">
+
+        <button (click)="onSubmit(books)" class="btn" mat-fab color="warn" aria-label="Example icon button with a delete icon">
+          <mat-icon>delete</mat-icon>
+        </button>
+        <h1>{{ books.id }}</h1>
+        <h1>{{ books.title }}</h1>
+        <p>Author: {{ books.author }}</p>
+        <p>price {{ books.price }}</p>
+        <p>price {{ books.category }}</p>
+      </li>
+    </ul>
+
+  </div>
